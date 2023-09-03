@@ -43,16 +43,13 @@ mode "resize" {
 
 client.background       #F8F8F2
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #282A36
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #282A36
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #282A36
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 gaps inner 10
-
-default_border pixel 2
-default_floating_border pixel 2
 
 workspace_layout tabbed
 
@@ -98,6 +95,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i
 bindsym $mod+r mode "resize"
 bindsym $mod+Tab exec --no-startup-id killall -SIGUSR1 i3-alt-tab
 bindsym $mod+n exec --no-startup-id killall -SIGUSR1 i3-rename-workspace
+
+for_window [class="^.*"] border normal
 
 exec --no-startup-id i3-alt-tab
 exec --no-startup-id i3-rename-workspace -p "Rename:" -nf "#F8F8F2" -nb "#282A36" -sb "#6272A4" -sf "#F8F8F2" -fn "Iosevka Nerd Font Mono-12"

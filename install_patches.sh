@@ -2,7 +2,7 @@
 
 set -e
 
-git clone --depth 0 https://github.com/i3/i3
+git clone --depth 1 https://github.com/i3/i3
 pushd i3
 git apply ../fix_double_border_between_tabs.patch
 meson build

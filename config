@@ -54,7 +54,7 @@ gaps inner 10
 workspace_layout tabbed
 
 floating_modifier $mod
-tiling_drag modifier titlebar
+tiling_drag off
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill

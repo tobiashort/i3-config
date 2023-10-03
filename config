@@ -59,7 +59,8 @@ tiling_drag off
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
-bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu='dmenu -i -nf "#F8F8F2" -nb "#282A36" -sb "#6272A4" -sf "#F8F8F2" -fn "Iosevka Nerd Font Mono-12" -p "Run:"' --term='alacritty'
+bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu='dmenu -i -nf "#F8F8F2" -nb "#282A36" -sb "#6272A4" -sf "#F8F8F2" -fn "Iosevka Nerd Font Mono-12" -p "App:"' --term='alacritty'
+bindsym $mod+F2 exec --no-startup-id dmenu_run -i -nf "#F8F8F2" -nb "#282A36" -sb "#6272A4" -sf "#F8F8F2" -fn "Iosevka Nerd Font Mono-12" -p "Cmd:"
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up

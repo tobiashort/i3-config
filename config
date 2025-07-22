@@ -28,7 +28,7 @@ bindsym $alt+t layout toggle tabbed split
 bindsym $alt+f fullscreen toggle
 bindsym $alt+shift+f floating toggle
 
-bindsym $alt+p scratchpad show
+bindsym $alt+p [all] scratchpad show
 bindsym $alt+shift+p move scratchpad
 
 set $ws1 "1"

@@ -4,9 +4,9 @@ exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id x11-on-resolution-change ~/.fehbg
 exec --no-startup-id i3-rename-workspace --dmenu "-p Rename: -h 26"
 exec --no-startup-id gpgconf --launch gpg-agent
-exec_always --no-startup-id alttab -d 1 -font "xft:IosevkaNerdFontMono-12" -t 100x100 -i 16x16
+exec_always --no-startup-id alttab -d 1 -font "xft:monospace-12" -t 100x100 -i 16x16
 
-font pango:Iosevka Nerd Font Mono 12
+font pango:monospace 12
 
 set $alt Mod1
 set $super Mod4
@@ -62,7 +62,7 @@ bindsym $alt+Shift+5 move container to workspace number $ws5
 
 bindsym $alt+Shift+c reload
 bindsym $alt+Shift+r restart
-bindsym $alt+Shift+e exec "i3-nagbar -f 'pango:Iosevka Nerd Font Mono 12' -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $alt+Shift+e exec "i3-nagbar -f 'pango:monospace 12' -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 for_window [class="Pcmanfm"] floating enable, resize set 800 600, move position cursor
 for_window [class="KeePassXC"] floating enable, resize set 800 600, move position cursor

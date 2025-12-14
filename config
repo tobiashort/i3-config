@@ -2,6 +2,8 @@ exec --no-startup-id xcompmgr
 exec --no-startup-id nm-applet
 exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id x11-on-resolution-change ~/.fehbg
+exec --no-startup-id i3-rename-workspace --dmenu "-p Rename: -h 26"
+exec --no-startup-id gpgconf --launch gpg-agent
 exec_always --no-startup-id alttab -d 1 -font "xft:IosevkaNerdFontMono-12" -t 100x100 -i 16x16
 
 font pango:Iosevka Nerd Font Mono 12
@@ -37,6 +39,8 @@ bindsym $alt+shift+f fullscreen toggle
 
 bindsym $alt+p [all] scratchpad show
 bindsym $alt+shift+p move scratchpad
+
+bindsym $alt+r exec --no-startup-id killall -SIGUSR1 i3-rename-workspace
 
 set $ws1 "1"
 set $ws2 "2"
